@@ -101,10 +101,10 @@ const SignUp = () => {
         <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">Join BlogVerse</p>
       </div>
       <div className="flex justify-center">
-        <p className="sm:md md:text-xl text-center text-gray-600">Create your account and <br />start your blogging journey today</p>
+        <p className="md:text-xl text-center text-gray-600">Create your account and <br />start your blogging journey today</p>
       </div>
       <div className="flex justify-center">
-        <form onSubmit={handleSubmit} className="shadow-2xl gap-5 pt-7 pb-5 px-4 mb-5 bg-white md:w-1/2 lg:w-1/3 flex flex-col justify-center items-center md:rounded-3xl" >
+        <form onSubmit={handleSubmit} className="shadow-2xl gap-5 pt-7 pb-5 px-4 mb-5 bg-white md:w-1/2 lg:w-1/3 flex flex-col justify-center items-center" >
           <div className=" w-[90%] flex flex-col gap-2">
             <p className="text-md text-gray-700 font-semibold">Full Name</p>
             <input

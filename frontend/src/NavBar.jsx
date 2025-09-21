@@ -7,7 +7,7 @@ const NavBar = () => {
         <p className="text-sm md:text-xl font-bold">BlogVerse</p>
       </div>
       <div>
-        <Link to="/" className="text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-800">Home</Link>
+        <Link to="/" className="text-gray-700 px-5 py-2 hover:bg-gray-200 hover:text-gray-800">Home</Link>
       </div>
       <div className="items-center flex gap-5">
         <div>
