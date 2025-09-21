@@ -81,20 +81,20 @@ function Home() {
                     posts.map((post) => (
                         <div className="w-96 bg-white shadow-lg rounded-lg" key={post.id}>
                             <div className="flex relative">
-                                <img className=" rounded-t-lg  shadow-lg h-52 w-96 " src={post.Image} alt="Writing" />
+                                <img className=" rounded-t-lg  shadow-lg h-52 w-96 " src={post.image} alt="Writing" />
                                 <button className="p-3 text-sm bg-white rounded-full absolute cursor-pointer right-4 top-3">Save</button>
                             </div>
                             <div className="flex gap-5 mt-3 px-2">
-                                <img className="rounded-full shadow-lg h-12 w-12 " src={post.profilePic} alt="Writing" />
+                                <img className="rounded-full shadow-lg h-12 w-12 " src={post.portfolioImage} alt="Writing" />
                                 <div>
                                     <p className="font-semibold">{post.author}</p>
-                                    <p className="text-gray-500">{post.postedOn} - {post.timeRead}</p>
+                                    <p className="text-gray-500">{post.date} - {post.time}</p>
                                 </div>
                             </div>
                             <div className="mt-3 px-3 flex flex-col gap-3">
                                 <p className="text-2xl font-bold ">{post.title}</p>
                                 <p className="text-gray-600">
-                                    {post.content}
+                                    {post.description}
                                 </p>
                             </div>
                             <div className="mt-3 mb-3  px-3 flex justify-end">
