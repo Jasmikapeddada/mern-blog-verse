@@ -85,7 +85,7 @@ function Home() {
                                 <button className="p-3 text-sm bg-white rounded-full absolute cursor-pointer right-4 top-3">Save</button>
                             </div>
                             <div className="flex gap-5 mt-3 px-2">
-                                <img className="rounded-full shadow-lg h-12 w-12 " src={post.portfolioImage} alt="Writing" />
+                                <img className="rounded-full shadow-lg h-12 w-12 " src={post.image} alt="Writing" />
                                 <div>
                                     <p className="font-semibold">{post.author}</p>
                                     <p className="text-gray-500">{post.date} - {post.time}</p>
