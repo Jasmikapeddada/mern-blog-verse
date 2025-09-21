@@ -1,19 +1,25 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className='flex justify-around h-16 items-center border-1 border-gray-100'>
-      <h1 className='text-xl font-bold'>BlogVerse</h1>
-      <button className='bg-blue-600 text-white px-5 py-2 rounded-xl cursor-pointer'>Home</button>
-      <div className='flex gap-5'>
-        <button className='font-semibold text-gray-700'>Sign in</button>
-        <button className='font-semibold text-gray-700'>Sign up</button>
+    <div className="w-full h-16 flex justify-around items-center border-1 bg-white border-gray-200 ">
+      <div>
+        <p className="text-sm md:text-xl font-bold">BlogVerse</p>
       </div>
+      <div>
+        <Link to="/" className="text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-800">Home</Link>
+      </div>
+      <div className="items-center flex gap-5">
+        <div>
+          <Link to="/login" className="text-gray-700 font-semibold">Sign In</Link>
+        </div>
+        <div>
+          <Link to="/signup" className="bg-blue-700 font-semibold text-white px-4 py-2 rounded-lg">Sign Up</Link>
+        </div>
+      </div>
+
+
     </div>
   )
 }
-
-// text-gray-700 hover:bg-blue-200 px-5 py-2 rounded-lg cursor-pointer duration-200 - Home Prev
-// bg-blue-600 text-white px-5 py-2 rounded-xl cursor-pointer - Sign in Prev
-
-export default NavBar
+export default NavBar;

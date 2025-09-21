@@ -1,23 +1,27 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-// import ProductCard from './ProductCard'
-import NavBar from './NavBar'
-import SignUp from './SignUp'
-// import Login from './Login'
-// import Home from './Home'
+import SignUp from "./SignUp.jsx"
+import NavBar from "./NavBar.jsx"
+// import ProductCard from "./ProductCard.jsx"
+import Login from "./Login.jsx"
+import Home from "./Home.jsx"
+import {Routes, Route} from "react-router-dom"
 
-function App() {
-  
+const App = () => {
   return (
-    <div >
-      <NavBar/>
-      {/* <Home /> */}
-      <SignUp />
-      {/* <Login /> */}
-    </div>
+    // <div className="">
+    //   <NavBar/>
+    //   {/* <Login/> */}
+    //   <Home/>
+    //   {/* <SignUp /> */}
+    //  {/* <ProductCard/> */}
+    // </div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/signup" element={<SignUp/>}/>
+     { /* <Route path="/product/:id" element={<ProductCard/>}/> */}
+     {/* <Route path="*" element={<NotFound/>}/> */}
+    </Routes>
   )
 }
 
-export default App
+export default App;

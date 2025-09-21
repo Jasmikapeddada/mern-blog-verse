@@ -1,96 +1,108 @@
 import React from "react";
+import NavBar from "./NavBar";
 
-const numbers = [1, 2, 3, 4, 5];
-numbers.map((num) => num * num);
+// numbers.map((num)=>(html))
 
-const posts = () => [
-    {
-        id : 1,
-        author : 'Jasmika',
-        title : 'Silent',
-        description : 'This book opens up a new perspective for introverts',
-        date : '10 Nov 2024',
-        time : '10:00 AM',
-        image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-        portfolioImage: '/public/vite.svg',
-    },
-    {
-        id : 2,
-        author : 'Jasmika',
-        title : 'Silent',
-        description : 'This book opens up a new perspective for introverts',
-        date : '10 Nov 2024',
-        time : '10:00 AM',
-        image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-        portfolioImage: '/public/vite.svg',
-    },
-    {
-        id : 3,
-        author : 'Jasmika',
-        title : 'Silent',
-        description : 'This book opens up a new perspective for introverts',
-        date : '10 Nov 2024',
-        time : '10:00 AM',
-        image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-        portfolioImage: '/public/vite.svg',
-    },
-    {
-        id : 4,
-        author : 'Jasmika',
-        title : 'Silent',
-        description : 'This book opens up a new perspective for introverts',
-        date : '10 Nov 2024',
-        time : '10:00 AM',
-        image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-        portfolioImage: '/public/vite.svg',
-    },
-    {
-        id : 5,
-        author : 'Jasmika',
-        title : 'Silent',
-        description : 'This book opens up a new perspective for introverts',
-        date : '10 Nov 2024',
-        time : '10:00 AM',
-        image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-        portfolioImage: '/public/vite.svg',
-    },
-    {
-        id : 6,
-        author : 'Jasmika',
-        title : 'Silent',
-        description : 'This book opens up a new perspective for introverts',
-        date : '10 Nov 2024',
-        time : '10:00 AM',
-        image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-        portfolioImage: '/public/vite.svg',
-    }
-]
+function Home() {
 
-const Home = () => {
+    const posts = [
+        {
+            id : 1,
+            author : 'Jasmika',
+            title : 'Silent',
+            description : 'This book opens up a new perspective for introverts',
+            date : '10 Nov 2024',
+            time : '10:00 AM',
+            image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            portfolioImage: '/public/vite.svg',
+        },
+        {
+            id : 2,
+            author : 'Jasmika',
+            title : 'Silent',
+            description : 'This book opens up a new perspective for introverts',
+            date : '10 Nov 2024',
+            time : '10:00 AM',
+            image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            portfolioImage: '/public/vite.svg',
+        },
+        {
+            id : 3,
+            author : 'Jasmika',
+            title : 'Silent',
+            description : 'This book opens up a new perspective for introverts',
+            date : '10 Nov 2024',
+            time : '10:00 AM',
+            image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            portfolioImage: '/public/vite.svg',
+        },
+        {
+            id : 4,
+            author : 'Jasmika',
+            title : 'Silent',
+            description : 'This book opens up a new perspective for introverts',
+            date : '10 Nov 2024',
+            time : '10:00 AM',
+            image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            portfolioImage: '/public/vite.svg',
+        },
+        {
+            id : 5,
+            author : 'Jasmika',
+            title : 'Silent',
+            description : 'This book opens up a new perspective for introverts',
+            date : '10 Nov 2024',
+            time : '10:00 AM',
+            image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            portfolioImage: '/public/vite.svg',
+        },
+        {
+            id : 6,
+            author : 'Jasmika',
+            title : 'Silent',
+            description : 'This book opens up a new perspective for introverts',
+            date : '10 Nov 2024',
+            time : '10:00 AM',
+            image : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            portfolioImage: '/public/vite.svg',
+        }]
+
     return (
-        <div className="flex flex-col items-center justify-center">
-            <h1 className="text-red-500 font-bold text-3xl">Welcome to Blog Verse</h1>
-            <p>Blog Verse is a platform where you can discover multilinguist books, blogs, and papers.</p>
-            <div className="grid grid-cols-3 gap-5 m-10">
+        <div className="min-h-screen flex flex-col items-center bg-gray-50">
+            <NavBar/>
+            <p className="text-4xl pt-5 font-bold">Welcome back, Dev Astra</p>
+            <p className="text-lg text-gray-500 mt-4"> Discover amazing stories, insights, and ideas from our community of writers.</p>
+            <div className=" flex gap-10 justify-around mt-5 ">
+                <button className="px-10 py-4 cursor-pointer bg-blue-700 hover:bg-blue-900 shadow-md text-white rounded-md">Write a New Post</button>
+                <button className="px-10 py-4 cursor-pointer bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md" >View My Posts</button>
+            </div>
+            <div className="mt-5 flex gap-10 flex-wrap justify-center w-full rounded-lg shadow-lg pb-5">
                 {
-                    posts().map((post) => (
-                        <div key={post.id} className="relative border-1 border-gray-300 rounded-lg shadow-lg hover:shadow-2xl duration-200 cursor-pointer">
-                            <img className="w-full h-48 object-cover rounded-t-lg" src={post.image} alt={post.title} />
-                            <img className="absolute right-3 top-5 w-10 h-10 rounded-full border-2 border-white -mt-5 ml-4" src={post.portfolioImage} alt={post.author} />
-                            <div className="p-4">
-                                <div className="flex flex-row h-8 w-8 rounder-full border-1 border-white">
-                                    <img className="rounded-full border-2 border-white -mt-5 ml-4" src={post.portfolioImage} alt={post.author} />
-                                    <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                                </div>
-                                <div className="flex items-center justify-between text-sm text-gray-600">
-                                    <span>By {post.author}</span>
-                                    <span>{post.date}.{post.time}</span>
-                                </div>
-                                <p className="text-gray-700 mb-4">{post.description}</p>
+                    posts.map((post) => (
+                        <div className="w-96 bg-white shadow-lg rounded-lg" key={post.id}>
+                            <div className="flex relative">
+                                <img className=" rounded-t-lg  shadow-lg h-52 w-96 " src={post.Image} alt="Writing" />
+                                <button className="p-3 text-sm bg-white rounded-full absolute cursor-pointer right-4 top-3">Save</button>
                             </div>
-                        </div>
-                    ))
+                            <div className="flex gap-5 mt-3 px-2">
+                                <img className="rounded-full shadow-lg h-12 w-12 " src={post.profilePic} alt="Writing" />
+                                <div>
+                                    <p className="font-semibold">{post.author}</p>
+                                    <p className="text-gray-500">{post.postedOn} - {post.timeRead}</p>
+                                </div>
+                            </div>
+                            <div className="mt-3 px-3 flex flex-col gap-3">
+                                <p className="text-2xl font-bold ">{post.title}</p>
+                                <p className="text-gray-600">
+                                    {post.content}
+                                </p>
+                            </div>
+                            <div className="mt-3 mb-3  px-3 flex justify-end">
+                                <button className="text-blue-500 hover:underline cursor-pointer">Read more</button>
+                            </div>
+                        </div>))
                 }
+
             </div>
         </div>
     )
